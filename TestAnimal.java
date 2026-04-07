@@ -6,9 +6,10 @@ public class TestAnimal{
         Animal horse = registry.createHorse(); 
 
         ((Sheep) sheep).setName("Dolly");
-        ((Cow) cow).setSound("Moo"); 
+        ((Cow) cow).setSound("Moo!"); 
         ((Horse) horse).setColor("Black"); 
 
+        System.out.println(sheep.getType() + " named " + ((Sheep) sheep).getName());
         System.out.println(cow.getType() + " Sound " + ((Cow) cow).getSound());
         System.out.println(horse.getType() + " color is " + ((Horse) horse).getColor());
 
